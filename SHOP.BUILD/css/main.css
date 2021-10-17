@@ -1,0 +1,39 @@
+.btn-outline-custom{
+    background: dodgerblue;
+    color: white;
+    transition: .3s;
+}
+.btn-outline-custom:hover{
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 8px rgba(30, 143, 255, 0.253);
+}
+.navbar-brand{
+    font-weight: 900;
+    color: dodgerblue !important;
+}
+.nav-link:hover{
+    color: dodgerblue !important;
+}
+.edit-1{
+    margin-left: 7.2vw;
+}
+.edit-2{
+    padding: 5%;
+    padding-left: 0;
+}
+.edit-3{
+    font-size: 3em;
+}
+@media only screen and (max-width: 576px){
+    .edit-1{
+        margin-left: 0;
+    }
+    .edit-2{
+        padding: 0;
+        padding-top: 5%;
+    }
+    .edit-3{
+        font-size: 2em;
+    }
+}

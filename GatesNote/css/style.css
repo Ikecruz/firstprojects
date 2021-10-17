@@ -1,0 +1,456 @@
+body{
+    margin: 0;
+    padding: 10px 7% 0 7%;
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+#gatesnote{
+    font-weight: 900;
+    font-size: 2.5em;
+    margin: 0;
+}
+#gatesnote:hover{
+    cursor: pointer;
+}
+#theblog{
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#together{
+    display: flex;
+}
+ul, li{
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+ul, li a{
+    text-decoration: none;
+    color: black;
+    font-size: .9em;
+    font-weight: 600;
+}
+#special{
+    color: blue;
+}
+#signupbtn{
+    background-color: transparent;
+    border-style: solid;
+    border-color: blue;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 30px;
+    color: blue;
+    margin-top: -5px;
+}
+#signupbtn:hover{
+    cursor: pointer;
+}
+#navy{
+    font-size: 2.2em;
+    margin: 0;
+    margin-top: -14px;
+    margin-left: 20px;
+}
+#navy:hover{
+    cursor: pointer;
+}
+#container1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 1000px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#img4contain1{
+    flex: 1;
+    margin-right: 2.5%;
+}
+#mou{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+#text4contain1{
+    flex: 1;
+    margin-left: 2.5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+#break{
+    width: 140px;
+}
+#virologist{
+    font-size: 2.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#virologist:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#ruth{
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#grade{
+    width: 100%;
+    /* max-height: 250px; */
+    max-height: 260px;
+    background-color: #0e1146;/* For browsers that do not support gradients*/
+    background-image: linear-gradient(to right, #0e1146, #510f2b, #af0e06);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+}
+#grade1{
+    display: flex;
+}
+#book{
+    margin-right: 20px;
+    max-height: 260px;
+    max-width: 180px;
+}
+#book-img{
+    height: 260px;
+    width: 180px;
+}
+#grade-text{
+    margin-top: 15px;
+}
+#grade-text1{
+    font-family: cursive;
+    margin-bottom: 0rem;
+}
+#grade-text2{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+#grade-btn{
+    background-color: transparent;
+    height: 30px;
+    width: 90px;
+    margin-top: 10px;
+    font-size: .8em;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+#grade-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+}
+#container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-height:1500px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#work{
+    width: 100%;
+}
+#firsthalf{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+#firsthalf1{
+    margin-right: 2.5%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#firsthalf2{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#secondhalf{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+#secondhalf1{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#secondhalf2{
+    margin-left: 2.5%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#img4half{
+    flex: 1;
+}
+#text4half{
+    flex: 1;
+}
+#gen1{
+    font-size: 1em;
+}
+#gen2{
+    font-size: .9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#gen1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#container3{
+    margin: 30px -8% 30px -9%;
+    padding: 15px 8% 50px 9%;
+    max-height: 450px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+#late{
+    display: flex;
+    justify-content: space-between;
+}
+#more-vid{
+    font-size: 1em;
+}
+#more-vid:hover{
+    color: rgb(151, 146, 146);
+    transition: .5s;
+    cursor: pointer;
+}
+#ohhhh{
+    display: flex;
+    margin-top: 10px;
+}
+#part1{
+    margin-right: 1.5%;
+    flex: 1;
+}
+#part2{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    flex: 1;
+}
+#part3{
+    margin-left: 1.5%;
+    flex: 1;
+}
+.part1img{
+    width: 100%;
+}
+.part1text{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-top: 5px;
+}
+.part1text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.read-btn{
+    background-color: transparent;
+    height: 30px;
+    width: 90px;
+    border-width: 1px;
+    font-size: .8em;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+.read-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+}
+#b{
+    margin-top: 27px;
+}
+#c{
+    margin-top: 27px;
+}
+@media only screen and (max-width: 1170px){
+    body{
+        margin: 10px 1% 0 1%;
+    }
+    #container3{
+        margin: 20px -12% 0 -13%;
+    }
+}
+@media only screen and (max-width: 1015px){
+    #notsp{
+        display: none;
+    }
+    #virologist{
+        font-size: 2em;
+    }
+    #container2{
+        flex-direction: column;
+    }
+    #firsthalf1, #firsthalf2, #secondhalf1, #secondhalf2{
+        flex-direction: row;
+    }
+    #firsthalf1{
+        margin-right: 0;
+    }
+    #firsthalf2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #secondhalf1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #secondhalf2{
+        margin-left: 0;
+    }
+    #text4half{
+        margin-left: 10px;
+    }
+    #c{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 930px){
+    #special{
+        display: none;
+    }
+}
+@media only screen and (max-width: 690px){
+    #img4contain1{
+        flex: 1;
+        margin-right: 0;
+    }
+    #text4contain1{
+        flex: 1;
+    }
+    #theblog{
+        display: none;
+    }
+    #signupbtn{
+        margin-left: -90px;
+        height: 30px;
+        width: 100px;
+    }
+    #navy{
+        margin-left: 5px;
+    }
+    #gatesnote{
+        font-size: 2.1em;
+    }
+    #container1{
+        flex-direction: column;
+    }
+    #grade-text1{
+        font-size: 1.6em;
+    }
+    #grade-text2{
+        font-size: .8em;
+    }
+    #book-img{
+        height: 220px;
+        width: 150px;
+    }
+    #firsthalf{
+        flex-direction: column;
+    }
+    #secondhalf{
+        flex-direction: column;
+    }
+    .part1text{
+        font-size: .8em;
+    }
+    #b{
+        margin-top: 15px;
+    }
+    #c{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 414px){
+    #grade-text1{
+        font-size: 1.3em;
+    }
+    #book-img{
+        height: 210px;
+    }
+    #b{
+        margin-top: 30px;
+    }
+    #c{
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width: 380px){
+    #grade-text{
+        margin-top: 10px;
+    }
+    #grade-text1{
+        font-size: 1em;
+    }
+    #grade-text2{
+        font-size: .6em;
+    }
+    #gen1{
+        font-size: .8em;
+    }
+    #gen2{
+        font-size: .7em;
+    }
+    #signupbtn{
+        margin-left: -90px;
+        width: 70px;
+        height: 30px;
+    }
+    #navy{
+        font-size: 2em;
+        margin: 0;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    #videos{
+        font-size: .8em;
+    }
+    #more-vid{
+        font-size: .8em;
+    }
+    #gatesnote{
+        font-size: 1.8em;
+    }
+    #haha{
+        font-size: 1em;
+    }
+    #grade-btn{
+        height: 30px;
+        width: 80px;
+        font-size: .6em;
+    }
+    .read-btn{
+        height: 30px;
+        width: 80px;
+        font-size: .6em;
+    }
+}

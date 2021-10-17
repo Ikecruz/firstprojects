@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    padding: 2% 5% 2% 5%;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-text{
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-text1{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.main-text2{
+    font-size: 2.5em;
+}
+.parent-contain{
+    width: 100%;
+    /* background: burlywood; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.child-contain{
+    width: 28%;
+    margin: 2% 0 2% 0;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+.img-contain{
+    height: 220px;
+}
+.for-icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background: white;
+    box-shadow: 0 0 10px grey;
+    position: absolute;
+    top: 185px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+.for-icon > i{
+    font-size: 2em;
+    transition: .4s;
+}
+.for-icon:hover{
+    background: red;
+}
+.for-icon:hover > i{
+    color: white;
+}
+.text-contain{
+    padding: 10% 5%;
+}
+.text-1{
+    margin-bottom: 5%;
+}
+.text-2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.images{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(80%);
+    transition: .4s;
+}
+.images:hover{
+    filter: none;
+}
+.btn-link{
+    text-decoration: none;
+    color: #000;
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    border: 1px solid grey;
+    margin: 5% 0 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .child-contain {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .parent-contain {
+    width: 100%;
+  }
+
+  .child-contain {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px){
+    .container{
+        padding: 1% 1% 2% 1%;
+    }
+}

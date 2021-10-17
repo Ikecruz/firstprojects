@@ -1,0 +1,169 @@
+body{
+    margin: 0 0 0 0;
+    background-color: whitesmoke;
+    color: black;
+    padding: 50px 5% 50px 5%;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+}
+#analysis{
+    background-color: white;
+    width: 65%;
+    padding: 20px 3% 20px 3%;
+    box-shadow: 0 0 5px grey;
+}
+#analysis-text{
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+#info{
+    background-color: white;
+    width: 30%;
+    margin-left: 5%;
+    box-shadow: 0 0 5px grey;
+    padding: 10px 2.5% 10px 2.5%;
+}
+#info-text{
+    margin: 0 0 0 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container4cp{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#coach{
+    flex: 1;
+    height: 450px;
+    margin-right: 2.5%;
+}
+#shout{
+    width: 100%;
+    height: 60%;
+    margin: 0 0 0 0;
+}
+#shout-text1{
+    font-size: 1.3em;
+}
+#players{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 450px;
+    margin-left: 2.5%;
+    box-sizing: border-box;
+}
+#players-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    height: 30%;
+    border-style: solid;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    padding: 7px 0 7px 0;
+    box-sizing: border-box;
+}
+#players-div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    height: 30%;
+    border-style: solid;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    padding: 7px 0 7px 0;
+    box-sizing: border-box;
+}
+#players-img{
+    width: 50%;
+    height: 100%;
+}
+#players-text{
+    padding-left: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#brace{
+    width: 100%;
+    height: 100%;
+}
+#horry{
+    font-size: .8em;
+    margin-right: 0;
+    flex: 1;
+}
+#lorem{
+    font-size: .6em;
+}
+#info-text{
+    font-size: 1em;
+}
+@media only screen and (max-width: 932px){
+    body{
+        padding: 0 0 0 0;
+    }
+    #container{
+        flex-direction: column;
+        width: 100%;
+    }
+    #analysis{
+        width: 100%;
+        order: 2;
+        margin: 0 0 0 0;
+        box-shadow: none;
+        padding: 0 0 0 0;
+    }
+    #info{
+        order: 1;
+        width: 100%;
+        margin: 0 0 0 0;
+        box-shadow: none;
+        padding: 0 0 0 0;
+    }
+    #info-text{
+        margin: 2px 3% 2px 3%;
+    }
+    #head{
+        margin: 5px 3% 5px 3%;
+    }
+    #analysis-text{
+        margin: 5px 3% 5px 3%;
+    }
+    #container4cp{
+        flex-direction: column;
+        margin: 5px 3% 5px 3%;
+    }
+    #players{
+        margin: 0 0 0 0;
+    }
+}
+@media only screen and (max-width: 925px){
+    #coach{
+        width: 100%;
+        margin-right: 0;
+    }
+    #players{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+@media only screen and (max-width: 899px){
+    #player-img{
+        width: 20%;
+    }
+    #player-text{
+        width: 60%;
+    }
+}

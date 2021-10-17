@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="http://fonts.cdnfonts.com/css/yanone-kaffeesatz" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+        .absolute{
+            height: 100vh;
+            width: 100%;
+            background: dodgerblue;
+            color: white;
+        }
+        .home{
+            width: 700px;
+            padding: 30px;
+        }
+        .home-text{
+            font-size: 3em;
+        }
+        .my-card{
+            height: 300px;
+            background: white;
+            border: 1px solid rgb(218, 218, 218);
+            margin-bottom: 20px;
+        }
+        .whitesmoke{
+            background: whitesmoke;
+        }
+        @media only screen and (min-width: 992px){
+            .absolute{
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .home-body{
+                z-index: 10 !important;
+                width: 100%;
+                margin-top: 100vh;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="absolute d-flex justify-content-center align-items-center">
+        <!-- Navbar -->
+        <div class="home text-center">
+            <p class="home-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, porro a ipsam iure possimus sunt?
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, nostrum!</p>
+        </div>
+    </section>
+    <section class="home-body border-top whitesmoke p-4">
+        <!-- Every other thing should be in here Footer too -->
+        <div class="container">
+            <h2 class="text-center">Best Selling</h2>
+            <div class="row m-0">
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="my-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

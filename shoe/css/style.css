@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f0f2f5;
+}
+#contain{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transition: 2s;
+}
+.child{
+    flex: 35%;
+    height: 520px;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(51, 51, 51, 0.534);
+    transition: 2s;
+}
+.child:nth-child(1){
+    height: 450px;
+    background-image: linear-gradient(to right, rgb(24, 24, 24), rgb(53, 53, 53), rgb(85, 85, 85));
+    box-shadow: none;
+    position: relative;
+}
+#nike{
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#zoo{
+    position: absolute;
+    top: 15%;
+    left: 15px;
+    font-size: 11rem;
+    text-transform: uppercase;
+    line-height: .9;
+    color: #fff;
+    opacity: .1;
+}
+#shoe{
+    position: absolute;
+    width: 130%;
+    left: -35%;
+    bottom: -5%;
+    transform: rotate(-20deg);
+    transition: all 2s;
+}
+.child:nth-child(2){
+    padding: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#new{
+    background-color: rgb(39, 39, 39);
+    color: white;
+    width: 60px;
+    border-radius: 5px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#run{
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+#product{
+    margin-top: 2.5%;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+#lorem{
+    margin-top: 2%;
+    font-size: 1.2em;
+    color: rgb(80, 80, 80);
+    margin-bottom: 1.8%;
+}
+.select{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 2.5%;
+    margin-right: 2.5%;
+    cursor: pointer;
+}
+#blue{
+    background-color: #47589e;
+}
+#red{
+    background-color: #eb3936;
+}
+#green{
+    background-color: #07a501;
+}
+#orange{
+    background-color: #f54615;
+}
+#black{
+    background-color: #252628;
+    border: 7px solid white;
+    box-shadow: 0 0 5px;
+}
+.size{
+    width: 50px;
+    height: 60px;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 3%;
+    margin-bottom: 1%;
+}
+.size:hover{
+    cursor: pointer;
+}
+#for-cart{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+#cart{
+    width: 50%;
+    height: 60px;
+    background-color: #252628;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 1px;
+}
+@media screen and (max-width:1130px){
+    #contain{
+        display: block;
+        flex-direction: column;
+        width: 80%;
+    }
+    .child{
+        height: 600px;
+    }
+    .child:nth-child(1){
+        max-height: 570px;
+    }
+    #shoe{
+        transform: rotate(0deg);
+        left: 0%;
+        width: 90%;
+        bottom: -10%;
+    }
+}
+@media screen and (max-width:865px){
+    .child{
+        max-height: 540px;
+    }
+    .child:nth-child(1){
+        max-height: 420px;
+    }
+    #shoe{
+        left: -7%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:650px){
+    .child:nth-child(1){
+        max-height: 320px;
+    }
+    #contain{
+        width: 95%;
+    }
+}
+@media screen and (max-width:400px){
+    .child{
+        max-height: 500px;
+    }
+    .child:nth-child(1){
+        max-height: 250px;
+    }
+    body{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #zoom{
+        font-size: 1.8em;
+    }
+    #zoo{
+        font-size: 8rem;
+    }
+}

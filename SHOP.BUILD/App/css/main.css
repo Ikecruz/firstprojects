@@ -1,0 +1,86 @@
+body{
+    overflow-x: hidden;
+    height: 150vh;
+}
+.nav{
+    width: 100vw;
+    position: fixed;
+    top: -70px;
+    opacity: 1;
+    transition: .5s;
+}
+.fixed-top{
+    position: fixed;
+    top: 0px;
+    opacity: 1;
+    transition: .5s;
+}
+.prim-color{
+    background: dodgerblue;
+}
+.hover-color:hover{
+    background: dodgerblue;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.dropdown-item:hover{
+    color: white;
+}
+.btn-edit{
+    border-color: dodgerblue;
+    color: dodgerblue;
+}
+.wow{
+    background: dodgerblue;
+    border: none;
+    height: 40px;
+    width: 100px;
+
+}
+.wow:focus{
+    border: 2px solid lightblue;
+}
+.display-none{
+    display: none;
+}
+.display-show{
+    display: block;
+}
+.loader{
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.object-contain{
+    position: absolute;
+    background: red !important;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: dodgerblue;
+    top: 0;
+}
+@media only screen and (max-width: 750px){
+    .nav{
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        opacity: 1;
+        transition: .5s;
+    }
+    .fixed-top{
+        position: fixed;
+        top: 0px;
+        opacity: 1;
+        transition: .5s;
+    }
+}

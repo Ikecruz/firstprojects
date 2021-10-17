@@ -1,0 +1,58 @@
+#cunt
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+p
+{
+    font-size: larger;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#img_contain
+{
+    display: flex;
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#img_contain img
+{
+    width: 30%;
+    height: 150px;
+    box-shadow: 0px 0px 20px grey;
+}
+@media (max-width: 980px)
+{
+    #img_contain img
+    {
+        width: 35%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    #last
+    {
+        margin-top: 5%;
+    }
+}
+@media (max-width: 720px)
+{
+    #img_contain img
+    {
+        width: 40%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+}
+@media (max-width: 598px)
+{
+    #img_contain img
+    {
+        width: 100%;
+        margin: 5% 5% 5% 5%;
+    }
+}

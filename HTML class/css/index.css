@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 30px 10% 30px 10%;
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#top{
+    width: 100%;
+    max-height: 500px;
+    padding-bottom: 30px;
+}
+#andriod{
+    font-size: 6em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    margin-bottom: 20px;
+}
+#some{
+    margin: 0;
+    font-size: 1.3em;
+    margin-right: 25%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#container1{
+    width: 100%;
+    max-height: 5000px;
+    margin: 100px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+#firstpart{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-right: 1%;
+}
+#secondpart{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-left: 1%;
+}
+.child-div1{
+    flex: 1;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 2%;
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+    box-sizing: border-box;
+}
+.child-div1:hover{
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    transition: .5s ease-in-out;
+}
+.child-div2{
+    flex: 1;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 2%;
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+    box-sizing: border-box;
+}
+.child-div2:hover{
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    transition: .5s ease-in-out;
+}
+#container2{
+    width: 100%;
+    max-height: 2000px;
+    display: flex;
+    flex-direction: row;
+}
+#thirdpart{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-right: 1%;
+}
+#fourthpart{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-left: 1%;
+}
+@media only screen and (max-width:1050px){
+    #container1{
+        flex-direction: column;
+    }
+    #container2{
+        flex-direction: column;
+    }
+    #firstpart{
+        margin-right: 0;
+    }
+    #secondpart{
+        margin-left: 0;
+    }
+    .child-div1{
+        margin-right: 2%;
+        margin-top: 30px;
+    }
+    .child-div1:hover{
+        margin-bottom: 5px;
+        margin-top: -5px;
+    }
+    .child-div2{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .child-div2:hover{
+        margin-bottom: 5px;
+        margin-top: -5px;
+    }
+}
+@media only screen and (max-width:500px){
+    #firstpart{
+        flex-direction: column;
+    }
+    #secondpart{
+        flex-direction: column;
+    }
+    #thirdpart{
+        flex-direction: column;
+    }
+    #fourthpart{
+        flex-direction: column;
+    }
+    #andriod{
+        font-size: 3em;
+    }
+    #some{
+        font-size: .6em;
+    }
+    #oop{
+        margin-top: -50px;
+    }
+}
+#hover{
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    color: whitesmoke;
+    border-radius: 50px;
+    font-size: .6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 1s;
+}
+#hover:hover{
+    transform: rotate(360deg);
+}
+#hover2{
+    width: 100px;
+    height: 40px;
+    background-color: crimson;
+    color: whitesmoke;
+    font-size: .8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 1s;
+}
+#jump:hover{
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes jump{
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(-10px);}
+    50%{transform: translateY(7px);}
+    100%{transform: translateY(0px);}
+}

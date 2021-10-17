@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+    height: 150vh;
+}
+
+/* Invisible ClassList */
+.nav{
+    width: 100vw;
+    position: fixed;
+    top: -70px;
+    opacity: 0;
+    transition: .5s;
+}
+
+/* Visible ClassList */
+.fixed-top{
+    position: fixed;
+    top: 0px;
+    opacity: 1;
+    transition: .5s;
+}
+@media only screen and (max-width: 750px){
+    /* Making the navbar fixed */
+    .nav{
+        width: 100vw;
+        position: fixed;
+        top: 0px; /* fixed to the top */
+        opacity: 1;
+        transition: .5s;
+    }
+    /* Hiding the other navbars */
+    .navbar{
+        display: none;
+    }
+}

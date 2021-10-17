@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: #ededed;
+}
+.container{
+    width: 100%;
+    background-color: burlywood;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.child{
+    height: 200px;
+    width: 21%;
+    background-color: red;
+    margin: 2% 2% 2% 2%;
+}
+@media only screen and (max-width: 990px){
+    .child{
+        width: 46%;
+    }
+}
+@media only screen and (max-width: 280px){
+    .child{
+        width: 96%;
+    }
+}

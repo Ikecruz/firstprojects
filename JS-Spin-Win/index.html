@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Vue App</title>
+
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- importing vue -->
+        <script src="https://unpkg.com/vue@next"></script>
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <div id="app">
+
+            <!-- container -->
+            <div class="contain">
+
+                <!-- images -->
+                <div class="child item-img">
+                    <div class="img-contain">
+                        <img v-bind:src="image" alt="">
+                    </div>
+                </div>
+
+                <!-- detail -->
+                <div class="child item-detail">
+
+                    <div class="add-cart-display">
+                        Cart({{cart}})
+                    </div>
+
+                    <h1 class="text">{{ product }}</h1>
+                    <p class="text-des">{{ productDes }}</p>
+                    <p v-if="aval" class="text-des">In stock</p>
+                    <p v-else class="text-des">Out of stock</p>
+                    <!-- <ul>
+                        <li v-for="size in sizes">Size {{ size }}</li>
+                    </ul> -->
+
+                    <div class="select" v-for="variant in variants" @click="updateImg(variant.Image)" :style="{ backgroundColor: variant.color }"></div>
+                    
+                    <button v-on:click="addToCart">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- custom js -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

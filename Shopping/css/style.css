@@ -1,0 +1,329 @@
+body{
+    margin: 0;
+    padding: 0 3% 0 3%;
+    color: black;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#drip{
+    color: #E23D28;
+}
+ul{
+    display: flex;
+}
+ul a{
+    text-decoration: none;
+    list-style: none;
+}
+ul a li{
+    color: black;
+    margin-right: 20px;
+    transition: .5s;
+}
+#trend a li{
+    color: black;
+    margin-right: 40px;
+    transition: .5s;
+}
+.colored{
+    color: #E23D28;
+}
+.odd{
+    margin-right: 0;
+}
+ul a li:hover{
+    color: #E23D28;
+    text-decoration: underline;
+}
+#trend a li:hover{
+    color: #E23D28;
+    text-decoration: underline;
+}
+#top{
+    width: 100%;
+    height: 400px;
+    background-color: whitesmoke;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#man{
+    height: 100%;
+    margin-right: 3%;
+}
+#drip{
+    height: 100%;
+}
+#top-text{
+    padding: 120px 2% 120px 2%;
+    margin-left: 3%;
+}
+#top-text1{
+    font-size: .7em;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#top-text2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0;
+}
+#top-text3{
+    font-size: .6em;
+    color: grey;
+}
+#shop-now a{
+    color: #E23D28;
+    font-size: .8em;
+    text-decoration: none;
+}
+#shop-now:hover{
+    text-decoration: underline;
+}
+#collections{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 40px 10% 40px 10%;
+}
+#firstcollect{
+    flex: 1;
+    height: 600px;
+    margin-right: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+#secondcollect{
+    flex: 1;
+    height: 600px;
+    margin-left: 1.5%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.collect1{
+    flex: 1.6;
+    background-color: whitesmoke;
+    margin-top: 30px;
+    transition: 1s;
+    position: relative;
+    padding: 30px 5% 0px 5%;
+    box-sizing: border-box;
+}
+.collect2{
+    flex: 2.2;
+    background-color: whitesmoke;
+    transition: 1s;
+    position: relative;
+    padding: 30px 5% 0px 5%;
+    box-sizing: border-box;
+}
+#redy{
+    background-color: #E23D28;
+    color: white;
+}
+.collect1:hover{
+    box-shadow: 0 0 60px #d6c3c2;
+}
+.collect2:hover{
+    box-shadow: 0 0 60px #d6c3c2;
+}
+#redy:hover{
+    box-shadow: 0 0 60px rgb(224, 141, 137)b;
+}
+#notop{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.collect-text{
+    margin: 0;
+}
+.collect-text1{
+    margin: 0;
+    font-size: 1.3em;
+}
+.collect-text2{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #E23D28;
+}
+#redy-text{
+    color: white;
+}
+.collect-text3{
+    margin: 0;
+    margin-top: 7px;
+}
+.collect-text3 a{
+    text-decoration: none;
+    font-size: .7em;
+    color: black;
+}
+.collect-text3 a:hover{
+    color: #E23D28;
+}
+#redy-link a:hover{
+    color: white;
+}
+#collect1-img{
+    height: 90%;
+    width: 40%;
+    position: absolute;
+    bottom: 10px;
+    right: 5%;
+    transition: 1s;
+}
+#collect1b-img{
+    height: 90%;
+    width: 70%;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    transition: 1s;
+}
+#collect2-img{
+    height: 80%;
+    width: 30%;
+    position: absolute;
+    bottom: 30px;
+    right: 20%;
+    transition: 1s;
+}
+#collect2b-img{
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    transition: 1s;
+}
+.img-10{
+    height: 100%;
+    width: 100%;
+    transition: 1s; 
+}
+.img-10:hover{
+    transform: scale(1.1);
+}
+#divider{
+    width: 113%;
+    height: 400px;
+    background-color: whitesmoke;
+    color: #E23D28;
+    margin: 0 -10% 30px -10%;
+    position: relative;
+}
+#divider-text1{
+    position: absolute;
+    left: 15%;
+    top: 37%;
+    transform: rotate(-90deg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+#divider-img{
+    position: absolute;
+    left: 25%;
+    transform: scale(0.8);
+    transition: 1s;
+}
+#divider-img:hover{
+    transform: scale(0.9);
+}
+#divider-text3{
+    color: black;
+    position: absolute;
+    left: 65%;
+    top: 25%;
+}
+#divider-text3a{
+    color: #E23D28;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0;
+}
+#divider-text3b{
+    margin: 0;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#learn{
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #E23D28;
+    font-size: .8em;
+    color: #E23D28;
+    transition: .7s;
+}
+#learn:hover{
+    color: white;
+    background-color: #E23D28;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:930px){
+    #collect1-img{
+        height: 80%;
+        width: 45%;
+    }
+    #collect1b-img{
+        height: 70%;
+        width: 70%;
+    }
+    #collect2-img{
+        height: 70%;
+        width: 30%;
+        right: 15%;
+    }
+    #collect2b-img{
+        height: 70%;
+        width: 40%;
+    }
+}
+@media only screen and (max-width:600px){
+    #collections{
+        flex-direction: column;
+    }
+    #firstcollect{
+        margin-right: 0;
+    }
+    #secondcollect{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    #nav{
+        display: none;
+    }
+    #man{
+        display: none;
+    }
+    #collect2-img{
+        height: 65%;
+    }
+    #divider{
+        background-color: whitesmoke;
+        background-image: 
+        /* linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), */
+        linear-gradient(rgb(218, 218, 218) .1em, transparent .1em);
+        background-size: 100% 1.2em;
+    }
+    #divider-text1{
+        display: none;
+    }
+    #divider-img{
+        display: none;
+    }
+    #divider-text3{
+        left: 10%;
+        top: 20%;
+    }
+}

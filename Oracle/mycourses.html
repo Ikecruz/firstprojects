@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TutHall</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: 'Adobe Clean UX', sans-serif;
+        }
+
+        .page-name{
+            min-height: 120px;
+            background: #0b172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .course-contain{
+            min-height: 80vh;
+        }
+
+        .min-text{
+            font-size: .9em;
+        }
+
+        .white-smoke{
+            background: whitesmoke;
+        }
+
+        .mycourse-card{
+            background: white;
+        }
+
+        .mycourse-card .img-contain{
+            height: 120px;
+            background: red;
+        }
+
+        .mycourse-card .img-contain img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 575.98px){
+            .mycourse-card{
+                width: 85%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-name">
+        <h4>My Courses</h4>
+    </div>
+    <section class="course-contain white-smoke">
+        <div class="container p-4">
+            <div class="row m-0">
+                <!-- Course Contain -->
+                <div class="col-lg-3 col-md-4 col-sm-6 py-2">
+                    <!-- Course Card -->
+                    <div class="mycourse-card border">
+                        <!-- Courses Image Contain -->
+                        <div class="img-contain">
+                            <!-- Course Image -->
+                            <img src="https://img-c.udemycdn.com/course/240x135/1036600_93c4_5.jpg" alt="">
+                        </div>
+                        <!-- Text contain -->
+                        <div class="text-contain p-2">
+                            <h6 class="m-0">Lorem ipsum dolor sit amet consectetur </h6>
+                            <p class="my-1 min-text">repellendus dolor nulla harum, quis saepe placeat officia facere pariatur et.</p>
+                            <a href="" class="text-body min-text"><p class="my-1">Start Course</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

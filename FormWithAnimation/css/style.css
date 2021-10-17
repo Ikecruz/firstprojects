@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+}
+#body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    position: relative;
+}
+#circle{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(3, 143, 143, 0.603);
+    border-radius: 60px;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    transition: .7s;
+}
+#circle:hover{
+    transform: rotate(720deg);
+    cursor: pointer;
+}
+#f{
+    margin: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(3, 126, 126);
+    font-size: 4em;
+}
+#container{
+    width: 45%;
+    max-height: 550px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(3, 143, 143, 0.603);
+    margin-top: 70px;
+    border-radius: 20px;
+    padding: 7% 7% 14% 7%;
+    box-sizing: border-box;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(3, 126, 126);
+    font-weight: 900;
+}
+.place{
+    height: 50px;
+    border-radius: 30px;
+    border-color: rgb(3, 126, 126);
+    border-style: solid;
+    margin-top: 30px;
+    padding-left: 30px;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(228, 228, 228);
+    color: grey;
+    outline: none;
+}
+.place:hover{
+    box-shadow: 0 0 10px rgb(3, 126, 126);
+}
+.place:focus{
+    box-shadow: 0 0 20px rgb(3, 126, 126);
+}
+.place:focus::placeholder{
+    color: transparent;
+}
+#tiny{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 83%;
+}
+.tinydude{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(3, 126, 126, 0.507);
+    border-radius: 50px;
+    margin-right: 10px;
+}
+#special{
+    background-color: rgb(3, 126, 126);
+}
+button{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(3, 126, 126);
+    border-style: none;
+    color: whitesmoke;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+@media only screen and (max-width:1050px){
+    #container{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:600px){
+    #container{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:450px){
+    #circle{
+        width: 90px;
+        height: 90px;
+        border-radius: 50px;
+    }
+    #f{
+        font-size: 3em;
+        margin-top: 20px;
+    }
+    span{
+        font-size: 1em;;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    .tinydude{
+        width: 8px;
+        height: 8px;
+        margin-right: 8px;
+    }
+}

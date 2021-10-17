@@ -1,0 +1,397 @@
+body{
+    margin: 0 0 0 0;
+    font-family: serif;
+    color: #fafaff;
+}
+#top{
+    width: 100%;
+    height: 30px;
+    background-color: #eeb6a4;
+    text-align: center;
+    padding: 7px 0px 7px 0px;
+    font-size: 16px;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+#top-hide{
+    width: 100%;
+    height: 50px;
+    background-color: #eeb6a4;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: none;
+}
+#back-img{
+    width: 100%;
+    height: 600px;
+    background-color: #eeb6a4bb;
+    background-image: url(../images/ladies.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 10% 50px 10%;
+    box-sizing: border-box;
+}
+#back-img-hide{
+    width: 100%;
+    height: 500px;
+    background-color: #eeb6a4bb;
+    background-image: url(../images/bracelets.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 10% 40px 10%;
+    box-sizing: border-box;
+    display: none;
+}
+#maize-hide{
+    display: flex;
+    margin: 0 0 0 0;
+    font-size: 2em;
+    justify-content: space-between;
+}
+#maize-design-hide{
+    text-align: center;
+}
+#bot-of-pic-hide{
+    margin: 150px 0 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#our{
+    margin: 0 0 0 0;
+    font-size: 2.2em;
+    font-weight: 100;
+}
+#our-text{
+    margin: 10px 0 0 0;
+    font-size: .8em;
+
+}
+#container1-hide{
+    width: 100%;
+    height: 1200px;
+    background-color: #fcf3ee;
+    color: #aca19d;
+    display: none;
+}
+#brace{
+    text-align: center;
+    padding: 40px 10% 0 10%;
+}
+#collection{
+    margin: 0 0 0 0;
+    font-size: .8em;
+}
+#ourbrace{
+    margin: 10px 0 10px 0;
+    font-size: 2.2em;
+    font-weight: 100;
+    font-family: cursive;
+    color: #d6b8ae;
+}
+#sort{
+    display: flex;
+    margin: 0 0 0 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+#sort-text{
+    flex: 1;
+    padding: 10px 0 10px 0;
+    text-align: right;
+    padding-right: 10%;
+    border-style: solid;
+    width: 50%;
+    border-right-width: 1px;
+    border-left-color: #fcf3ee;
+}
+#line{
+    flex: 1;
+    padding: 10px 0 10px 0;
+    text-align: left;
+    padding-left: 10%;
+    border-style: solid;
+    width: 50%;
+    border-left-width: 1px;
+    border-right-color: #fcf3ee;
+}
+#earring{
+    width: 40%;
+    height: 450px;
+    margin: 50px 0 20px 5%;
+}
+#braceletsimg2{
+    width: 100%;
+    height: 300px;
+    margin: 0 0 0 0;
+}
+#essential{
+    font-size: .6em;
+    text-align: center;
+}
+#celine{
+    font-size: 1.8em;
+    text-align: center;
+    font-family: cursive;
+    color: #d6b8ae;
+    margin: 0 0 0 0;
+}
+#price{
+    text-align: center;
+    margin: 5px 0 5px 0;
+    font-family: fantasy;
+}
+#imgbox{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    box-sizing: border-box;
+    margin: 30px 0 0 0;
+}
+#firstimg{
+    width: 55%;
+    height: 100%;
+}
+#secondimg{
+    width: 35%;
+    height: 100%;
+    margin-left: 10%;
+}
+#alley{
+    width: 100%;
+    height: 100%;
+}
+#dress{
+    width: 100%;
+    height: 100%;
+}
+#top-of-pic{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#gbp{
+    font-family: cursive;
+    flex: 1;
+    font-size: 15px;
+}
+#maize{
+    flex: 3;
+}
+#maize-design{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 0 0;
+}
+#shop{
+    font-family: cursive;
+    font-size: 1em;
+    text-align: center;
+}
+#sign{
+    font-family: cursive;
+    font-size: 1em;
+}
+#bot-of-pic{
+    margin-top: 200px;
+    width: 60%;
+}
+#explore{
+    margin: 0 0 0 0;
+    font-size: 50px;
+    font-weight: 100;
+}
+#lorem{
+    margin: 15px 0 0 0;
+}
+#jewbox-contain{
+    height: 600px;
+    width: 100%;
+    background-color: #fcf3ee;
+    color: #aca19d;
+    padding: 3% 15% 3% 15%;
+    box-sizing: border-box;
+}
+#jewbox{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#isla{
+    font-size: 1.4em;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 200;
+    color: #d6b8ae;
+    margin: 0 0 0 0;
+}
+#amelia1{
+    flex: 1;
+    margin-right: 3%;
+}
+#amelia2{
+    flex: 1;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#amelia3{
+    flex: 1;
+    margin-left: 3%;
+}
+.viewbtn{
+    width: 120px;
+    height: 30px;
+    font-size: .5em;
+    margin-top: 10px;
+    border-style: none;
+    background-color: #dab2a6;
+    color: #f7daca;
+    margin-top: 5%;
+    margin-left: 43%;
+}
+#flip{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    background-color: #f7daca;
+    color: #aca19d;
+}
+#flip1{
+    flex: 1;
+    margin: 5% 7% 5% 10%;
+}
+#flip1-img{
+    width: 100%;
+    height: 100%;
+}
+#flip2{
+    flex: 1;
+    text-align: left;
+    margin: 8% 3% 8% 0;
+}
+#flip2-text1{
+    font-size: .6em;
+}
+#flip2-text2{
+    font-size: 2em;
+    font-family: monospace;
+    margin-top: 0;
+}
+#flip2-text3{
+    font-size: .8em;
+    margin-top: 0;
+}
+#flip3{
+    flex: 1;
+}
+#flip3-img{
+    width: 100%;
+    height: 100%;
+}
+.flipbtn{
+    width: 120px;
+    height: 30px;
+    font-size: .5em;
+    margin-top: 10px;
+    border-style: none;
+    background-color: #dab2a6;
+    color: #f7daca;
+}
+.shopbtn{
+    width: 120px;
+    height: 40px;
+    font-size: 10px;
+    margin-top: 10px;
+    border-style: none;
+    background-color: #f7daca;
+    box-shadow: 1px 1px 10px grey;
+}
+#under-back-img{
+    margin: 0 0 0 0;
+    padding: 5px 10% 5px 10%;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: #dbb3a7;
+    box-sizing: border-box;
+}
+#gbp2{
+    font-family: cursive;
+    flex: 1;
+    font-size: .8em;
+}
+#maize2{
+    flex: 3;
+}
+#maize-design2{
+    text-align: center;
+    font-size: 1.7em;
+    margin: 0 0 0 0;
+}
+#shop2{
+    font-family: cursive;
+    font-size: .8em;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+#sign2{
+    font-family: cursive;
+    font-size: 13px;
+}
+@media only screen and (max-width:1030px){
+    #top-of-pic{
+        flex-direction: column;
+    }
+    #gbp{
+        order: 2;
+        text-align: center;
+        font-size: 12px;
+    }
+    #sign{
+        order: 3;
+        text-align: center;
+        font-size: 12px;
+    }
+    #shop{
+        font-size: 12px;
+    }
+    #maize-design{
+        order: 1;
+    }
+    #bot-of-pic{
+        margin-top: 100px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px){
+    #top{
+        display: none;
+    }
+    #back-img{
+        display: none;
+    }
+    #under-back-img{
+        display: none;
+    }
+    #jewbox-contain{
+        display: none;
+    }
+    #top-hide{
+        display: block;
+    }
+    #back-img-hide{
+        display: block;     
+    }
+    #container1-hide{
+        display: block;
+    }
+    #flip{
+        display: none;
+    }
+}

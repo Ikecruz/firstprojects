@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TutHall</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            font-family: 'Adobe Clean UX', sans-serif;
+        }
+
+        .whitesmoke {
+            background: #0b172a;
+            /* background: #ffc40b; */
+        }
+
+        .bg-main {
+            background: #0b172a;
+        }
+
+        .btn-bg {
+            background: #ffc40b;
+        }
+
+        .white-smoke {
+            background: whitesmoke;
+        }
+
+        i {
+            color: #0b172a;
+        }
+
+        .course-detail-card {
+            margin: 1em;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .course-detail-card {
+                margin: 0;
+            }
+        }
+
+        .course-detail-card {
+            position: sticky;
+            top: 20px;
+        }
+
+        .preview-vid {
+            height: 350px;
+        }
+
+        .course-detail-tab {
+            font-size: 1.1em;
+            min-height: 60px;
+            position: sticky;
+            top: 0;
+            z-index: 4;
+        }
+
+        .header {
+            text-transform: uppercase;
+        }
+
+        .program-courses-card .image {
+            height: 150px;
+            background: whitesmoke;
+        }
+
+        .program-courses-card .text .author {
+            font-size: .8em;
+        }
+
+        .program-courses-card .text .category>div {
+            background: #0b172a;
+            color: white;
+            font-size: .7em;
+        }
+
+        .program-courses-card .text {
+            font-size: .9em;
+        }
+
+        .program-courses-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .tutor-img {
+            width: 180px;
+            height: 150px;
+            background: whitesmoke;
+        }
+
+        .tutor-img img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .student-img {
+            width: 100px;
+            height: 100px;
+            background: whitesmoke;
+        }
+
+        .student-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .share-contain {
+            width: 500px;
+            text-align: center;
+        }
+
+        .cus-dropdown {
+            width: 250px;
+            border: 2px solid whitesmoke;
+            border-radius: 0;
+            font-size: 1em;
+        }
+
+        .user-img{
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- User logged in Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-0 border-bottom bg-white auto-font">
+        <div class="container">
+            <a class="navbar-brand color-main fw-bold fs-3" href="#">TutHall</a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto cus-nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active animate__animated animate__fadeInDown o-3s" href="#">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active animate__animated animate__fadeInDown" href="#">My Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active animate__animated animate__fadeInDown o-5s" href="#">Need Support?</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item dropdown d-flex align-items-center me-3 me-lg-1">
+                            Good Day &nbsp;<span>User</span>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center me-3 me-lg-1">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-heart fa-lg"></i>
+
+                                <span class="badge rounded-pill badge-notification bg-danger">6</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center me-3 me-lg-1">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                <span class="badge rounded-pill badge-notification bg-danger">12</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown me-3 me-lg-1">
+                            <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                <div class="bg-danger user-img"></div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end cus-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="#">My Courses</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Edit Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">My Cart</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">My Wishlist</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Signout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course detail -->
+    <section>
+        <div class="container-fluid whitesmoke p-0">
+            <div class="container p-0">
+                <div class="row m-0 p-0">
+                    <div class="col-lg-8 d-flex align-items-center">
+                        <div class="text-white m-4" style="max-width: 500px;">
+                            <h3>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </h3>
+                            <h6>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos, impedit, itaque
+                                exercitationem veniam minima hic, laudantium est laboriosam natus fuga molestiae
+                                aspernatur totam! Rem neque ad reprehenderit inventore tempora?
+                            </h6>
+                            <p>Cruz Ikedinobi</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-0 position-relative">
+                        <div class="course-detail-card bg-white border-0 p-4">
+                            <div class="gap-2 py-2">
+                                <h4>&#8358; 5000</h4>
+                                <p><i class="fas fa-users fa-lg"></i>&nbsp;&nbsp; 1500 Students</p>
+                                <p><i class="far fa-clock fa-lg"></i>&nbsp;&nbsp; 3 Hours</p>
+                                <p><i class="fas fa-thumbs-up fa-lg"></i>&nbsp;&nbsp; 95.5 (400 reviews)</p>
+                                <p><i class="fab fa-teamspeak fa-lg"></i>&nbsp;&nbsp; English</p>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn bg-main shadow-0 text-white btn-lg" type="button">Add to
+                                    cart</button>
+                                <button class="btn white-smoke shadow-0 text-black btn-lg" type="button">add to
+                                    wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course Extras -->
+    <section class="pb-2">
+        <div class="course-detail-tab white-smoke d-flex align-items-center justify-content-center">
+            <ul class="nav nav-tabs d-flex align-items-center justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+                <li class="nav-item"><a class="nav-link" href="#requirement">Requirements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tutor">Tutor</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#similar-courses">Similar Courses</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="container px-0">
+                <div class="row d-flex justify-content-center px-0 m-0">
+                    <!-- Main Contain -->
+                    <div class="col-md-9 px-0">
+                        <!-- Course Preview -->
+                        <div id="preview" class="py-4">
+                            <h4 class="header text-center">Course Preview</h4>
+                            <div class="preview-vid white-smoke">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/80jY2UPtHxs"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <!-- Benefits -->
+                        <div id="benefits" class="py-4">
+                            <h4 class="header text-center">
+                                Benefits
+                            </h4>
+                            <div class="px-1">
+                                <ol>
+                                    <div class="d-grid gap-4">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, laudantium sunt? Itaque sapiente, aperiam harum eum accusantium nemo odit repellat magni saepe a quidem quis iure vel omnis, ipsam incidunt.</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores vero, accusantium qui numquam repellat optio iure officiis. Commodi qui consequatur quod quaerat? Alias animi iste labore soluta natus perferendis autem.</p>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Requirement -->
+                        <div id="requirement" class="py-4">
+                            <div class="px-2">
+                                <h4 class="header text-center">Requirements</h4>
+                                <div class="d-grid gap-2">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, tempore laborum.
+                                        Cupiditate illo tempora earum? Quasi quod exercitationem id, ab corrupti quo,
+                                        vitae atque est magni laboriosam modi labore similique?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus
+                                        ullam dignissimos officia possimus voluptate. Ipsa corrupti sed consectetur
+                                        animi provident et porro omnis aliquid repudiandae. Nemo reiciendis quasi porro!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tutor -->
+                        <div id="tutor" class="py-4 px-2">
+                            <h4 class="header text-center">Tutor</h4>
+                            <div class="tutor-img-contain d-flex justify-content-center">
+                                <div class="tutor-img">
+                                    <img src="https://images.unsplash.com/photo-1513152697235-fe74c283646a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <h4>Marcus Devin</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid possimus ducimus
+                                    impedit, culpa in, quos temporibus suscipit sit iste omnis harum dignissimos,
+                                    aperiam maxime! Consectetur deserunt eveniet illum et aliquid! Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Sapiente, ipsa illum, est explicabo optio
+                                    laudantium vel adipisci, debitis mollitia ducimus alias iure tempore voluptatem at.
+                                    Atque magni expedita rerum possimus.</p>
+                            </div>
+                        </div>
+
+                        <!-- Reviews -->
+                        <div id="reviews" class="py-4 px-2">
+                            <h4 class="text-center header">Reviews</h4>
+                            <!-- Slider -->
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row white-smoke p-4">
+                                            <div class="col-3">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="student-img">
+                                                        <!-- Reviewer Image -->
+                                                        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="d-grid gap-1">
+                                                    <!-- Name and Date -->
+                                                    <p><span class="student-name">User Name</span> - Date</p>
+                                                    <!-- Review -->
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                                                        sunt
+                                                        aliquam, nisi nostrum pariatur dignissimos dolorum dolores ullam
+                                                        veniam
+                                                        est doloribus illo quibusdam rem nobis et facere sapiente
+                                                        similique
+                                                        esse.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row white-smoke p-4">
+                                            <div class="col-3">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="student-img">
+                                                        <!-- Reviewer Image -->
+                                                        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="d-grid gap-1">
+                                                    <!-- Name and Date -->
+                                                    <p><span class="student-name">User Name</span> - Date</p>
+                                                    <!-- Review -->
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                                                        sunt
+                                                        aliquam, nisi nostrum pariatur dignissimos dolorum dolores ullam
+                                                        veniam
+                                                        est doloribus illo quibusdam rem nobis et facere sapiente
+                                                        similique
+                                                        esse. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Nam, ducimus aliquid. Corporis molestiae modi et, nam cupiditate
+                                                        hic doloribus rerum aliquam. Asperiores dolorum voluptate itaque
+                                                        provident. Corrupti rerum excepturi obcaecati.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Similar Courses -->
+                        <div id="similar-courses" class="py-4">
+                            <h4 class="header text-center">Similar Courses</h4>
+                            <div class="container px-0">
+                                <!-- Cards row -->
+                                <div class="row m-0 d-flex justify-content-center g-2">
+                                    <div class="col-lg-4 col-md-6 p-2 wow animate__animated animate__bounceInLeft o-9s">
+                                        <!-- Card -->
+                                        <a href="" class="text-body">
+                                            <div class="card program-courses-card border shadow-0 m-2">
+                                                <div class="cus-card-body">
+                                                    <div class="image">
+                                                        <img src="https://images.unsplash.com/photo-1628757067638-069a6f23ce5d?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="text p-3">
+                                                        <div class="category my-2">
+                                                            <div class="btn btn-sm border-0 shadow-0">
+                                                                Web development
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="m-0 description fw-bold fs-0 text-600">Course description
+                                                            course description
+                                                        </h6>
+                                                        <p class="m-0 author">Lorem ipsum dolor sit </p>
+                                                        <p class="m-0 rating"><span class="icon"><i
+                                                                    class="fas fa-thumbs-up fa-lg"></i></span> 75.5 (559
+                                                            reviews)</p>
+                                                        <p class="m-0 price">&#8358;5000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Card End -->
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 p-2 wow animate__animated animate__bounceInLeft o-9s">
+                                        <!-- Card -->
+                                        <a href="" class="text-body">
+                                            <div class="card program-courses-card border shadow-0 m-2">
+                                                <div class="cus-card-body">
+                                                    <div class="image">
+                                                        <img src="https://images.unsplash.com/photo-1628757067638-069a6f23ce5d?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="text p-3">
+                                                        <div class="category my-2">
+                                                            <div class="btn btn-sm border-0 shadow-0">
+                                                                Web development
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="m-0 description fw-bold fs-0 text-600">Course description
+                                                            course description
+                                                        </h6>
+                                                        <p class="m-0 author">Lorem ipsum dolor sit </p>
+                                                        <p class="m-0 rating"><span class="icon"><i
+                                                                    class="fas fa-thumbs-up fa-lg"></i></span> 75.5 (559
+                                                            reviews)</p>
+                                                        <p class="m-0 price">&#8358;5000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Card End -->
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 p-2 wow animate__animated animate__bounceInLeft o-9s">
+                                        <!-- Card -->
+                                        <a href="" class="text-body">
+                                            <div class="card program-courses-card border shadow-0 m-2">
+                                                <div class="cus-card-body">
+                                                    <div class="image">
+                                                        <img src="https://images.unsplash.com/photo-1628757067638-069a6f23ce5d?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="text p-3">
+                                                        <div class="category my-2">
+                                                            <div class="btn btn-sm border-0 shadow-0">
+                                                                Web development
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="m-0 description fw-bold fs-0 text-600">Course description
+                                                            course description
+                                                        </h6>
+                                                        <p class="m-0 author">Lorem ipsum dolor sit </p>
+                                                        <p class="m-0 rating"><span class="icon"><i
+                                                                    class="fas fa-thumbs-up fa-lg"></i></span> 75.5 (559
+                                                            reviews)</p>
+                                                        <p class="m-0 price">&#8358;5000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Card End -->
+                                    </div>
+                                </div>
+                                <!-- Cards row End -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid white-smoke p-4">
+            <div class="d-flex justify-content-center">
+                <div class="share-contain d-flex align-items-center flex-column">
+                    <h3 class="mb-4">Do you know someone who'd love this course? Tell them about it...</h3>
+                    <!-- AddToAny BEGIN -->
+                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-icon-color="#0b172a">
+                        <a class="a2a_button_facebook"></a>
+                        <a class="a2a_button_twitter"></a>
+                        <a class="a2a_button_email"></a>
+                    </div>
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+                    <!-- AddToAny END -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

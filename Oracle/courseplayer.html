@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TutHall</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: 'Adobe Clean UX', sans-serif;
+        }
+
+        .course-name{
+            min-height: 120px;
+            background: #0b172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .course-name div{
+            width: 450px;
+            text-align: center;
+        }
+
+        .video-contain{
+            height: 430px;
+            background: whitesmoke;
+        }
+
+        .main-vid{
+            height: 100%;
+            width: 100%;
+        }
+
+        .header{
+            height: 70px;
+        }
+
+        .selector-contain{
+            max-height: 360px;
+            overflow-y: auto;
+            background: white;
+        }
+
+        .selector{
+            background: white;
+            cursor: pointer;
+        }
+
+        .selector:hover{
+            background: whitesmoke;
+        }
+
+        .active,
+        .active:hover{
+            background: #0b172a;
+            color: white;
+        }
+
+        @media screen and (max-width: 767.98px){
+            .video-contain{
+                height: 300px;
+            }
+        }
+
+        @media screen and (max-width: 575.98px){
+            .video-contain{
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="course-name">
+        <div>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui iusto</h5>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid px-0">
+            <div class="row m-0">
+                <div class="col-lg-8 px-0">
+                    <div class="video-contain border">
+                        <video id="player" class="main-vid" playsinline controls data-poster="/path/to/poster.jpg">
+                            <source src="images/video-8.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <!-- Playlist split -->
+                <div class="col-lg-4 px-0">
+                    <!-- Playlist Container -->
+                    <div class="playlist-contain border-bottom">
+                        <!-- Header -->
+                        <div class="header border d-flex align-items-center px-4">
+                            <h4>Lessons</h4>
+                        </div>
+                        <div class="selector-contain">
+                            <!-- Echo list item here  -->
+                            <!-- Selector -->
+                            <div class="selector p-3 border-bottom active" id="images/video-8.mp4">
+                                <div class="row m-0">
+                                    <div class="col-10">
+                                        <p class="mb-0 fs-5">1. Intro to your course</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="mb-0 fs-5">2:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Selector -->
+                            <div class="selector p-3 border-bottom" id="images/video-2.mp4">
+                                <div class="row m-0">
+                                    <div class="col-10">
+                                        <p class="mb-0 fs-5">2. course</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="mb-0 fs-5">2:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Selector -->
+                            <div class="selector p-3 border-bottom" id="images/video-3.mp4">
+                                <div class="row m-0">
+                                    <div class="col-10">
+                                        <p class="mb-0 fs-5">3. okay</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="mb-0 fs-5">2:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Selector -->
+                            <div class="selector p-3 border-bottom" id="images/video-4.mp4">
+                                <div class="row m-0">
+                                    <div class="col-10">
+                                        <p class="mb-0 fs-5">4. okay</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="mb-0 fs-5">2:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Selector -->
+                            <div class="selector p-3 border-bottom" id="images/video-5.mp4">
+                                <div class="row m-0">
+                                    <div class="col-10">
+                                        <p class="mb-0 fs-5">5. okay</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="mb-0 fs-5">2:10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Selector -->
+                            <div class="selector p-3 border-bottom" id="images/video-6.mp4">
+                                <div class="row m-0">
+                                    <div class="col-10">
+                                        <p class="mb-0 fs-5">6. okay</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="mb-0 fs-5">2:10</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer !Don't touch -->
+                            <div class="p-3 bg-white"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+    let selectors = document.querySelectorAll('.selector');
+    let mainVid = document.querySelector('.main-vid');
+    
+    selectors.forEach(selector =>{
+        selector.addEventListener('click', (e) =>{
+            e.preventDefault();
+            selectors.forEach( select => select.classList.remove('active'));
+            selector.classList.add('active');
+            let src = selector.id;
+            mainVid.src = src;
+            mainVid.play();
+        });
+    });
+    
+    </script>
+</body>
+</html>

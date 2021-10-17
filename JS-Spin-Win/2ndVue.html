@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/vue@next"></script>
+        <link rel="stylesheet" href="css/2ndVue.css">
+    </head>
+    <body>
+        <div id="app">
+            <p>{{ name }}</p>
+
+            <div v-if="showState">
+                <p>my name is cruz</p>
+            </div>
+
+            <button @click="toggleShow">
+                <span v-if="showState">Hide Name</span>
+                <span v-if="!showState">Show Name</span>
+            </button>
+
+            <ul>
+                <li v-for="shoe in shoes"  @click="Event(shoe)" :class="{aval: shoe.isAval}">
+                    <img :src="shoe.Image" alt="">
+                    <h3>{{ shoe.name }}</h3>
+                    <p>{{ shoe.size }}</p>
+                </li>
+            </ul>
+        </div>
+        <script src="js/2ndVue.js"></script>
+    </body>
+</html>

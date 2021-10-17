@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <script>
+            // var loanAmount = 34500;
+            // var interest = 8;
+            // var interest, totalAmount;
+            // interestAmount = loanAmount * (interest/100);
+            // totalAmount = loanAmount + interestAmount;
+            // document.write("<b>Total amount to be paid ($):</b> "+ totalAmount + "<br/>")
+
+            var data = prompt('Choose option: \n 1.Data Plans \n 2.Social Bundles \n 3.Balance Check ');
+            switch (data)
+            {
+                case '1':
+                    var dataPlan = prompt('Choose option: \n 1.Daily Plans :$50 \n 2.Weekly Plans :$100 \n 3.Monthly Plans :300');
+                    switch (dataPlan)
+                    {
+                        case '1':
+                        case '2':
+                        case '3':
+                            alert ('Successful');
+                            break;
+                        default:
+                            alert ('Request not processed ');
+                            break;
+                    };
+                    break;
+                case '2':
+                    var SocialBundles = prompt('Choose option: \n 1.FaceBook \n 2.WhatsApp \n 3.Instagram ');
+                    switch (SocialBundles)
+                    {
+                        case '1':
+                            var Facebook = prompt('Choose option: \n 1.Facebook Daily :$10 \n 2.Facebook Weekly :$20 \n 3.Facebook Monthly :$50');
+                            switch (Facebook)
+                            {
+                                case '1':
+                                case '2':
+                                case '3':
+                                    alert ('Successful');
+                                    break;
+                                default:
+                                    alert ('Request not processed ');
+                                    break;
+                            };
+                            break;
+                        case '2':
+                            var WhatsApp = prompt('Choose option: \n 1.WhatsApp Daily :$10 \n 2.WhatsApp Weekly :$20 \n 3.WhatsApp Monthly :$50');
+                            switch (WhatsApp)
+                            {
+                                case '1':
+                                case '2':
+                                case '3':
+                                    alert ('Successful');
+                                    break;
+                                default:
+                                    alert ('Request not processed ');
+                                    break;
+                            };
+                            break;
+                        case '3':
+                            var Instagram = prompt('Choose option: \n 1.Instagram Daily :$20 \n 2.Instagram Weekly :$30 \n 3.Instagram Monthly :$60');
+                            switch (Instagram)
+                            {
+                                case '1':
+                                case '2':
+                                case '3':
+                                    alert ('Successful');
+                                    break;
+                                default:
+                                    alert ('Request not processed ');
+                                    break;
+                            };
+                            break;
+                        default:
+                            alert ('Enter Valid key.');
+                            break;
+                    };
+                    break;
+                case '3':
+                    alert ('You don\'t have any active data bundle.');
+                    break;
+                default:
+                    alert ('Enter Valid key.');
+                    break;
+            };
+        </script>
+    </body>
+</html>
+
